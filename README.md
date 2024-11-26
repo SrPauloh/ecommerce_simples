@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# atividade3css
-=======
-# Ecommerce-GM
-Ecommerce com Html,css e javascript
->>>>>>> cbe855524db6cb0718de68caa97c9f1079dc08de
+
+# ecommerce_front-end
+>>>>>>> 77be761e732c8bc4a92ba78302ff2e259ead95a0
