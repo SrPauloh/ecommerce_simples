@@ -1,0 +1,54 @@
+<!DOCTYPE html>  
+<html lang="pt-br">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Login Game Mania</title>  
+    <link rel="stylesheet" href="login.css">  
+    <link rel="shortcut icon" href="img/game mania logo.ico" type="icon">  
+</head>  
+<body>  
+    <div class="login-box">  
+        <div class="login-header">  
+            <header>Login</header>  
+        </div>  
+        <form id="loginForm" onsubmit="Login(); return false;">  
+            <div class="input-box">  
+                <input type="text" class="input-field" id="emailInput" placeholder="Email" required>  
+            </div>  
+            <div class="input-box">  
+                <input type="password" class="input-field" id="senhaInput" placeholder="Senha" required>  
+            </div>  
+            <div class="forgot">  
+                <section>  
+                    <input type="checkbox" id="check">  
+                    <label for="check">Lembrar de mim</label>  
+                </section>  
+                <section>  
+                    <a href="#">Esqueci minha senha</a>  
+                </section>  
+            </div>  
+            <div class="input-submit">  
+                <button type="submit" class="submit-btn">Entrar</button>  
+            </div>  
+        </form>  
+        <div class="sign-up-link">  
+            <p> Novo por aqui? <a href="#">Cadastre-se</a></p>  
+        </div>  
+    </div>  
+    <script>  
+        function Login() {  
+            var emailInput = document.getElementById('emailInput');  
+            var senhaInput = document.getElementById('senhaInput');  
+            var email = emailInput.value.toLowerCase();  
+            var senha = senhaInput.value.toLowerCase();  
+
+            if (email === "admin" && senha === "admin") {  
+                window.location.href = "index.html"; // Redireciona se os dados estiverem corretos  
+            } else {  
+                alert("Dados incorretos, tente novamente"); // Mensagem de erro  
+            }  
+        }  
+    </script>  
+</body>  
+</html>
